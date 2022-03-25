@@ -65,7 +65,7 @@ public class Venta {
                         }
                         System.out.println("escriba el numero del asiento que desea comprar");
                         ingresar = scan.nextInt();
-                        if (ingresar >= 1 && ingresar <= 30) {
+                        if (ingresar > 0 && ingresar <= 30) {
                             if (asientosList.get(ingresar - 1).isReservado()) {
                                 System.out.println("Lo Sentimos el asiento seleccionado ya se encuentra reservado");
                             } else {
@@ -99,7 +99,7 @@ public class Venta {
                     //almacenador de numero iniciado en 0 e inicia ciclo, si está reservado valor suma el valor de cada
                     //asiento del reservado dentro del ciclo usando valor = valor asiendo + valor
                     int valor = 0;
-                    for (int i = 1; i < 100; i++) {
+                    for (int i = 0; i < 100; i++) {
                         if (asientosList.get(i).isReservado()) {
                             valor = asientosList.get(i).getValorAsiento() + valor;
                         }
