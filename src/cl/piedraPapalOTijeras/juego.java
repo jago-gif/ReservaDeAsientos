@@ -23,7 +23,7 @@ public class juego {
         }
         if (juego < 1){
             System.out.println(" Perdiste... te falta practica");
-        }else if (juego==0){
+        }else if (juego != 0){
             System.out.println("Que pelea, quedaste empatado");
         }else {
             System.out.println("Felicidades ganaste");
