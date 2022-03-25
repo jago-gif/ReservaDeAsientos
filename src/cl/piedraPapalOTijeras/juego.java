@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class juego {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int juego = 0;
+        int juego=0;
         int jugada;
         for (int i = 0; i < 10; i++) {
             int maquina = (int) (Math.random() * 3 + 1);
@@ -21,12 +21,12 @@ public class juego {
                 System.out.println(juego);
             }
         }
-        if (juego < 1){
+        if (juego < 0){
             System.out.println(" Perdiste... te falta practica");
-        }else if (juego != 0){
-            System.out.println("Que pelea, quedaste empatado");
-        }else {
+        }else if (juego >0) {
             System.out.println("Felicidades ganaste");
+        }else {
+            System.out.println("que pelea, quedaron empatados");
         }
     }
 }
