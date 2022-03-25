@@ -1,8 +1,8 @@
-package cl.piedraPapalOTijeras;
+package cl.Juegos;
 
 import java.util.Scanner;
 
-public class juego {
+public class PiedraPapelOTijera {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int juego=0;
@@ -42,6 +42,7 @@ public class juego {
                     System.out.println("tijera empata con tijera");
                 }
                 }
+            System.out.println("Mi puntaje es "+juego);
             }
         if (juego < 0){
             System.out.println(" Perdiste... te falta practica");
@@ -51,6 +52,5 @@ public class juego {
             System.out.println("que pelea, quedaron empatados");
         }
     }
-
 }
 
